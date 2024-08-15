@@ -1,0 +1,178 @@
+/* General Container */
+.order-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: #444;
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000409;
+  padding-bottom: 8px;
+}
+
+/* Selected Items Section */
+.selected-items ul {
+  list-style: none;
+  padding: 0;
+}
+
+.selected-items li {
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 18px;
+  color: #555;
+}
+
+.selected-items li:last-child {
+  border-bottom: none;
+}
+
+/* Total Price */
+.total-price {
+  text-align: right;
+  font-size: 22px;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Delivery Details Section */
+.delivery-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the form */
+  width: 100%;
+}
+
+.delivery-details form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* Set a max-width for the form */
+}
+
+/* Align label and input fields side by side */
+.delivery-details .form-group {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.delivery-details .form-group label {
+  flex-basis: 25%; /* Label takes 25% of the width */
+  font-weight: bold;
+  color: #333;
+  font-size: 16px;
+  margin-right: 20px; /* Space between label and input box */
+}
+
+.delivery-details .form-group input,
+.delivery-details .form-group textarea {
+  flex-basis: 70%; /* Input and textarea take 70% of the width */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.delivery-details textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.delivery-details input:focus,
+.delivery-details textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.orderForm{
+  box-shadow: none;
+}
+
+/* Button Styling */
+.delivery-details button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #ff6347;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  align-self: center; /* Centers the button */
+}
+
+.delivery-details button:hover {
+  background-color: #ff4500;
+  box-shadow: 0 4px 8px rgba(0, 91, 187, 0.2);
+}
+
+.delivery-details button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #ff4500;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .order-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .selected-items li {
+    font-size: 16px;
+  }
+
+  .delivery-details .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .delivery-details .form-group label {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    text-align: left; /* Align label text to the left on mobile */
+  }
+
+  .delivery-details .form-group input,
+  .delivery-details .form-group textarea {
+    flex-basis: 100%;
+  }
+
+  .delivery-details button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}

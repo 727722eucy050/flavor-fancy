@@ -1,0 +1,14 @@
+/* OrderConfirmation.css */
+.confirmation-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .confirmation-container h2 {
+    color: green;
+  }
+  
+  .confirmation-container p {
+    font-size: 18px;
+  }
+  

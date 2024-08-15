@@ -1,0 +1,102 @@
+/* Customorder.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-container {
+    background-color: #d9534f;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+    margin: 20px auto;
+  }
+  
+  .form-header {
+    padding-left: 50px;
+    font-style: italic;
+  }
+  
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  .submit-button {
+    background-color: #d1c938;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #bca32e;
+  }
+  
+  .app {
+    margin-top: 40px;
+  }
+  
+  .menu-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .section {
+    margin: 20px 0;
+  }
+  
+  .dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .dropdown-arrow {
+    margin-left: 5px;
+  }
+  

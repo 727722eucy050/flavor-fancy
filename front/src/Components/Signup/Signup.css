@@ -1,0 +1,71 @@
+.signup-container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./images/food1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-section {
+  display: none;
+}
+
+.form-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 0 20px; /* Adds side margins to avoid touching screen edges on smaller devices */
+}
+
+form {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 0.75em;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.signup-button:hover {
+  background-color: #d40813;
+}
+
+#head {
+  text-align: center;
+  margin-bottom: 1em;
+}

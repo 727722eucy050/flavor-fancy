@@ -1,0 +1,170 @@
+.taskbar,
+.footer {
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+/* Menu page container */
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Content area */
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 1400px; /* Adjust the maximum width as needed */
+  margin: 20px 0; /* Add some space around the content */
+}
+
+/* Filter selector */
+.filter-selector {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Margin to the right for spacing */
+  width: 200px; /* Fixed width for filter buttons */
+}
+
+.filter-selector button {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #a59a9a;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  font-size: 16px;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none; /* Remove the default outline */
+}
+
+.filter-selector button.active,
+.filter-selector button:hover {
+  background-color: #333;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu items */
+.menu-items {
+  display: flex;
+  flex-direction: column; /* Stack each package vertically */
+  align-items: center; /* Center align the menu items */
+  gap: 20px; /* Space between packages */
+  padding: 20px;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row; /* Image and content side by side */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Reduce width to 80% */
+  max-width: 800px; /* Set a maximum width for consistency */
+  box-sizing: border-box;
+}
+
+.menu-item:hover {
+  transform: scale(1.05); /* Slightly enlarge the item on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a more pronounced shadow on hover */
+}
+
+.menu-item img {
+  width: 30%; /* Reduce the image width to 30% */
+  height: auto; /* Maintain aspect ratio */
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+.menu-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+  padding: 15px; /* Reduce padding */
+  width: 70%; /* Adjust the content width accordingly */
+  box-sizing: border-box;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.menu-item-content h2 {
+  margin-bottom: 10px; /* Reduce bottom margin */
+  font-size: 20px; /* Slightly smaller font size */
+  font-weight: bold;
+  color: black;
+}
+
+.menu-item-content p {
+  margin: 4px 0; /* Slightly smaller margins */
+  color: black;
+}
+
+.menu-item-content .price {
+  margin-top: 8px; /* Reduce top margin */
+  font-size: 18px; /* Slightly smaller font size */
+  font-weight: bold;
+  color: #e91e63;
+}
+
+.menu-item-content .rating {
+  margin-top: 8px; /* Reduce top margin */
+  font-size: 16px; /* Slightly smaller font size */
+  color: #ffa500; /* Orange color for rating */
+}
+
+.menu-item-content:hover {
+  background-color: #f9f9f9; /* Light background color on hover */
+}
+
+.filter-selector button {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  font-size: 16px;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none; /* Remove the default outline */
+}
+
+.filter-selector button.active,
+.filter-selector button:hover {
+  background-color: #333;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin: 10px 0;
+}
+
+.footer-column.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

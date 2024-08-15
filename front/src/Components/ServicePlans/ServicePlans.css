@@ -1,0 +1,39 @@
+.service-plans-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f8f8f8;
+  }
+  
+  .service-plans-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid #007bff;
+    color: #007bff;
+  }
+  
+  .plan-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  

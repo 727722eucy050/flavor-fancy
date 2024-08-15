@@ -1,0 +1,81 @@
+.package-container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.package-content {
+  text-align: center;
+  max-width: 1000px; /* Increase the maximum width */
+  width: 100%; /* Ensure the content spans the full width up to max-width */
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.package-content h1 {
+  font-size: 40px; /* Increase font size for package name */
+  margin-bottom: 20px; /* Add some space below the title */
+}
+
+.meal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Increase gap between meals */
+}
+.meal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.meal img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.meal h2 {
+  font-size: 30px; /* Increase font size for meal headings */
+  margin-bottom: 15px; /* Add more space below the heading */
+}
+
+.meal p {
+  font-size: 20px; /* Increase font size for meal details */
+  margin: 8px 0; /* Add more space around text */
+}
+
+/* Styling for the total price */
+.total-price {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.total-price h2 {
+  font-size: 28px; /* Increase font size for total price */
+  color: #333;
+}
+
+.order-now-button {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.order-now-button:hover {
+  background-color: #ff4500;
+}
+
